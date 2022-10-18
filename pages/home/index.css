@@ -1,1 +1,114 @@
 /* Desenvolva sua estilização aqui...*/
+main {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    height: 100vh;
+}
+section {
+    display: flex;
+    padding: 100px;
+    height: 100%;
+}
+h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    color: var(--color-grey-7);
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--color-brand-1);
+    width: 50%;
+    padding: 200px;
+}
+.desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--color-grey-7);
+}
+.achados_recentemente {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--color-grey-7);
+}
+.procurar_usuario {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    background-color: var(--color-grey-1);
+    width: 50%;
+    padding: 200px;
+}
+.procurar_usuario form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 8px;
+}
+.procurar_usuario div > p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--color-grey-7);
+}
+.procurar_usuario form > input {
+    width: 316px;
+    height: 38px;
+    background-color: var(--color-grey-1);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    color: var(--color-grey-7);
+    padding: 15px;
+}
+.procurar_usuario form > button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 93px;
+    gap: 10px;
+    width: 316px;
+    height: 38px;
+    border: none;
+    background-color: var(--color-brand-1);
+    color: var(--color-grey-7);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+}
+.procurar_usuario form > button:disabled {
+    color: rgba(255, 255, 255, 0.35);
+    background-color: rgba(214, 51, 108, 0.4);;
+    cursor: auto;
+}
+h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--color-grey-7);
+}
+.spinner {
+    width: 25px;
+    height: 25px;
+    border: 4px solid;
+    border-radius: 50%;
+    border-color: var(--color-grey-4) #e6e6e6 #e6e6e6;
+    animation: carregando 0.5s infinite;
+}
+
+@keyframes carregando {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

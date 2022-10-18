@@ -1,1 +1,132 @@
 /* Desenvolva sua estilização aqui...*/
+body {
+    background-color: var(--color-grey-2);
+    margin: 0 auto;
+    width: 782px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.usuario {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.usuario div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.usuario div > p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.botao_ancora {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.botao_ancora button {
+    width: 84px;
+    height: 38px;
+    background-color: var(--color-brand-2);
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 0px;
+    color: var(--color-grey-7);
+}
+.botao_ancora a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 169px;
+    height: 38px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-grey-7);
+    text-decoration: none;
+}
+img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--color-grey-7);
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    gap: 20px;
+}
+li {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 35px;
+    gap: 20px;
+    width: 381px;
+    height: 243px;
+    border: 2px solid var(--color-grey-4);
+    border-radius: 8px;
+}
+li > h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-grey-7);
+}
+li > p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.6)
+}
+li > div {
+    display: flex;
+    gap: 20px;
+}
+.botao_repositoio {
+    width: 93px;
+    height: 28px;
+    border: 1px solid var(--color-grey-7);
+    border-radius: 4px;
+    background-color: var(--color-grey-1);
+    color: var(--color-grey-7);
+}
+.botao_demo {
+    width: 55px;
+    height: 28px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    border: 1px solid var(--color-grey-7);
+    color: var(--color-grey-7);
+    background-color: var(--color-grey-1);
+    border-radius: 4px;
+}
+li:hover {
+    border: 2px solid var(--color-grey-7);
+    background-color: var(--color-grey-1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+li:hover .botao_repositoio  {
+    background: var(--color-brand-2);
+    border: 1px solid var(--color-brand-2);
+    border-radius: 4px;
+    transition: 0.3s;
+}
